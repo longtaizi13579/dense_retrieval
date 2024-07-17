@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "retriever_training.py", line 181, in <module>
+    logging.basicConfig(filename=os.path.join('./logger', 'retriever.log'), level=logging.INFO,
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/logging/__init__.py", line 1988, in basicConfig
+    h = FileHandler(filename, mode)
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/logging/__init__.py", line 1147, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/logging/__init__.py", line 1176, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/logger/retriever.log'

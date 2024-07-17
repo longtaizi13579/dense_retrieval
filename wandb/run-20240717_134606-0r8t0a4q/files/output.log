@@ -1,0 +1,35 @@
+/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/torch/_utils.py:776: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+Inference Embeddings: 100%|███████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  3.55it/s]
+
+
+
+
+
+
+
+
+
+
+
+Inference Embeddings: 100%|█████████████████████████████████████████████████████████████████████████████████████████████| 85/85 [00:24<00:00,  3.50it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 710.21it/s]
+Map:   0%|                                                                                                              | 0/1000 [00:00<?, ? examples/s]
+Traceback (most recent call last):
+  File "retriever_training.py", line 193, in <module>
+    data_loader = build_train_data(data_args.file_path, model_args.model_name_or_path, tokenizer, identifiers_index, name_to_identifiers_id, all_candidates, data_args)
+  File "retriever_training.py", line 141, in build_train_data
+    encode_ds = dataset.map(tokenize, batched=True, batch_size=training_args.train_batch_size)
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 602, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 567, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 3161, in map
+    for rank, done, content in Dataset._map_single(**dataset_kwargs):
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 3552, in _map_single
+    batch = apply_function_on_filtered_inputs(
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 3432, in apply_function_on_filtered_inputs
+    validate_function_output(processed_inputs, indices)
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 3398, in validate_function_output
+    raise TypeError(
+TypeError: Provided `function` which is applied to all elements of table returns a `dict` of types [<class 'transformers.tokenization_utils_base.BatchEncoding'>, <class 'transformers.tokenization_utils_base.BatchEncoding'>, <class 'transformers.tokenization_utils_base.BatchEncoding'>]. When using `batched=True`, make sure provided `function` returns a `dict` of types like `(<class 'list'>, <class 'numpy.ndarray'>, <class 'pandas.core.series.Series'>, <class 'torch.Tensor'>)`.

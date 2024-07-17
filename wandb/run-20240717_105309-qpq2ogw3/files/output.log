@@ -1,0 +1,51 @@
+/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/torch/_utils.py:776: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Inference Embeddings:  29%|██████████████████████████▏                                                               | 945/3253 [00:42<01:44, 22.07it/s]
+Traceback (most recent call last):
+  File "retriever_training.py", line 189, in <module>
+    data_loader = build_train_data(data_args.file_path, model_args.model_name_or_path, tokenizer, identifiers_index, name_to_identifiers_id, all_candidates, data_args)
+  File "retriever_training.py", line 97, in build_train_data
+    qry_embedding = model.encode_queries(user_querys, convert_to_numpy=False)
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/FlagEmbedding/flag_models.py", line 57, in encode_queries
+    return self.encode(input_texts, batch_size=batch_size, max_length=max_length, convert_to_numpy=convert_to_numpy)
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/FlagEmbedding/flag_models.py", line 96, in encode
+    last_hidden_state = self.model(**inputs, return_dict=True).last_hidden_state
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 1141, in forward
+    encoder_outputs = self.encoder(
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 694, in forward
+    layer_outputs = layer_module(
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 584, in forward
+    self_attention_outputs = self.attention(
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 514, in forward
+    self_outputs = self.self(
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 303, in forward
+    attention_scores = torch.matmul(query_layer, key_layer.transpose(-1, -2))
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.50 GiB (GPU 0; 79.35 GiB total capacity; 2.11 GiB already allocated; 809.19 MiB free; 2.79 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

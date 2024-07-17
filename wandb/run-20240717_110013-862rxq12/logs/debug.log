@@ -1,0 +1,29 @@
+2024-07-17 11:00:13,572 INFO    MainThread:334318 [wandb_setup.py:_flush():76] Current SDK version is 0.17.4
+2024-07-17 11:00:13,572 INFO    MainThread:334318 [wandb_setup.py:_flush():76] Configure stats pid to 334318
+2024-07-17 11:00:13,572 INFO    MainThread:334318 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2024-07-17 11:00:13,572 INFO    MainThread:334318 [wandb_setup.py:_flush():76] Loading settings from /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/settings
+2024-07-17 11:00:13,572 INFO    MainThread:334318 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-17 11:00:13,572 INFO    MainThread:334318 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'retriever_training.py', 'program_abspath': '/cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/retriever_training.py', 'program': 'retriever_training.py'}
+2024-07-17 11:00:13,572 INFO    MainThread:334318 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-07-17 11:00:13,572 INFO    MainThread:334318 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-07-17 11:00:13,572 INFO    MainThread:334318 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-17 11:00:13,572 INFO    MainThread:334318 [wandb_init.py:_log_setup():529] Logging user logs to /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_110013-862rxq12/logs/debug.log
+2024-07-17 11:00:13,572 INFO    MainThread:334318 [wandb_init.py:_log_setup():530] Logging internal logs to /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_110013-862rxq12/logs/debug-internal.log
+2024-07-17 11:00:13,572 INFO    MainThread:334318 [wandb_init.py:init():569] calling init triggers
+2024-07-17 11:00:13,572 INFO    MainThread:334318 [wandb_init.py:init():576] wandb.init called with sweep_config: {}
+config: {}
+2024-07-17 11:00:13,572 INFO    MainThread:334318 [wandb_init.py:init():619] starting backend
+2024-07-17 11:00:13,573 INFO    MainThread:334318 [wandb_init.py:init():623] setting up manager
+2024-07-17 11:00:13,573 INFO    MainThread:334318 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-07-17 11:00:13,574 INFO    MainThread:334318 [wandb_init.py:init():631] backend started and connected
+2024-07-17 11:00:13,577 INFO    MainThread:334318 [wandb_init.py:init():720] updated telemetry
+2024-07-17 11:00:13,577 INFO    MainThread:334318 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-07-17 11:00:14,624 INFO    MainThread:334318 [wandb_run.py:_on_init():2402] communicating current version
+2024-07-17 11:00:15,044 INFO    MainThread:334318 [wandb_run.py:_on_init():2411] got version response 
+2024-07-17 11:00:15,044 INFO    MainThread:334318 [wandb_init.py:init():804] starting run threads in backend
+2024-07-17 11:00:18,375 INFO    MainThread:334318 [wandb_run.py:_console_start():2380] atexit reg
+2024-07-17 11:00:18,375 INFO    MainThread:334318 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2024-07-17 11:00:18,375 INFO    MainThread:334318 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2024-07-17 11:00:18,375 INFO    MainThread:334318 [wandb_run.py:_redirect():2325] Redirects installed.
+2024-07-17 11:00:18,376 INFO    MainThread:334318 [wandb_init.py:init():847] run started, returning control to user process
+2024-07-17 11:27:20,636 WARNING MsgRouterThr:334318 [router.py:message_loop():77] message_loop has been closed

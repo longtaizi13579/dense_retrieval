@@ -1,0 +1,296 @@
+2024-07-17 13:52:13,403 INFO    StreamThr :3643006 [internal.py:wandb_internal():85] W&B internal server running at pid: 3643006, started at: 2024-07-17 13:52:13.402257
+2024-07-17 13:52:13,404 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status
+2024-07-17 13:52:13,405 INFO    WriterThread:3643006 [datastore.py:open_for_write():87] open: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/run-7d7052ws.wandb
+2024-07-17 13:52:13,407 DEBUG   SenderThread:3643006 [sender.py:send():379] send: header
+2024-07-17 13:52:13,407 DEBUG   SenderThread:3643006 [sender.py:send():379] send: run
+2024-07-17 13:52:14,301 INFO    SenderThread:3643006 [dir_watcher.py:__init__():211] watching files in: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files
+2024-07-17 13:52:14,302 INFO    SenderThread:3643006 [sender.py:_start_run_threads():1188] run started: 7d7052ws with start time 1721195533.402106
+2024-07-17 13:52:14,307 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: check_version
+2024-07-17 13:52:14,308 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: check_version
+2024-07-17 13:52:17,570 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: run_start
+2024-07-17 13:52:17,583 DEBUG   HandlerThread:3643006 [system_info.py:__init__():26] System info init
+2024-07-17 13:52:17,583 DEBUG   HandlerThread:3643006 [system_info.py:__init__():41] System info init done
+2024-07-17 13:52:17,583 INFO    HandlerThread:3643006 [system_monitor.py:start():194] Starting system monitor
+2024-07-17 13:52:17,583 INFO    SystemMonitor:3643006 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-17 13:52:17,583 INFO    HandlerThread:3643006 [system_monitor.py:probe():214] Collecting system info
+2024-07-17 13:52:17,584 INFO    SystemMonitor:3643006 [interfaces.py:start():188] Started cpu monitoring
+2024-07-17 13:52:17,584 INFO    SystemMonitor:3643006 [interfaces.py:start():188] Started disk monitoring
+2024-07-17 13:52:17,584 INFO    SystemMonitor:3643006 [interfaces.py:start():188] Started gpu monitoring
+2024-07-17 13:52:17,585 INFO    SystemMonitor:3643006 [interfaces.py:start():188] Started memory monitoring
+2024-07-17 13:52:17,585 INFO    SystemMonitor:3643006 [interfaces.py:start():188] Started network monitoring
+2024-07-17 13:52:17,635 DEBUG   HandlerThread:3643006 [system_info.py:probe():152] Probing system
+2024-07-17 13:52:17,639 DEBUG   HandlerThread:3643006 [gitlib.py:_init_repo():56] git repository is invalid
+2024-07-17 13:52:17,639 DEBUG   HandlerThread:3643006 [system_info.py:probe():200] Probing system done
+2024-07-17 13:52:17,640 DEBUG   HandlerThread:3643006 [system_monitor.py:probe():223] {'os': 'Linux-3.10.0-1160.el7.x86_64-x86_64-with-glibc2.17', 'python': '3.8.19', 'heartbeatAt': '2024-07-17T05:52:17.635695', 'startedAt': '2024-07-17T05:52:13.395842', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'retriever_training.py', 'codePathLocal': 'retriever_training.py', 'codePath': 'retriever_training.py', 'host': 'alywlcb-lingjun-gpu-0025', 'username': 'root', 'executable': '/home/yeqin/anaconda3/envs/retriever/bin/python', 'cpu_count': 64, 'cpu_count_logical': 128, 'cpu_freq': {'current': 3498.265984374998, 'min': 800.0, 'max': 3500.0}, 'cpu_freq_per_core': [{'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3497.912, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3498.797, 'min': 800.0, 'max': 3500.0}, {'current': 3501.806, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.682, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3500.036, 'min': 800.0, 'max': 3500.0}, {'current': 3499.682, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3500.744, 'min': 800.0, 'max': 3500.0}, {'current': 3500.036, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3304.272, 'min': 800.0, 'max': 3500.0}, {'current': 3500.036, 'min': 800.0, 'max': 3500.0}, {'current': 3493.133, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3498.62, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3496.142, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.505, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3500.036, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.328, 'min': 800.0, 'max': 3500.0}, {'current': 3498.974, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3500.036, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3500.744, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3500.744, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3502.514, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.328, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3500.213, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3498.797, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3500.036, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3501.806, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3500.744, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3500.036, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}, {'current': 3499.859, 'min': 800.0, 'max': 3500.0}], 'disk': {'/': {'total': 445.49813079833984, 'used': 302.25812911987305}}, 'gpu': 'NVIDIA A100-SXM4-80GB', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85198045184}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85198045184}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85198045184}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85198045184}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85198045184}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85198045184}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85198045184}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85198045184}], 'memory': {'total': 2013.2662925720215}}
+2024-07-17 13:52:17,640 INFO    HandlerThread:3643006 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-17 13:52:17,640 INFO    HandlerThread:3643006 [system_monitor.py:probe():227] Publishing system info
+2024-07-17 13:52:17,640 DEBUG   HandlerThread:3643006 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-07-17 13:52:18,304 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_created():271] file/dir created: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/conda-environment.yaml
+2024-07-17 13:52:20,814 DEBUG   HandlerThread:3643006 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-17 13:52:20,816 INFO    HandlerThread:3643006 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-17 13:52:20,817 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:52:20,818 DEBUG   SenderThread:3643006 [sender.py:send():379] send: files
+2024-07-17 13:52:20,818 INFO    SenderThread:3643006 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-17 13:52:20,872 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-17 13:52:20,872 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: python_packages
+2024-07-17 13:52:20,872 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-17 13:52:20,873 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:52:20,873 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: stop_status
+2024-07-17 13:52:21,304 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/conda-environment.yaml
+2024-07-17 13:52:21,304 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_created():271] file/dir created: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/wandb-metadata.json
+2024-07-17 13:52:21,304 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_created():271] file/dir created: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/requirements.txt
+2024-07-17 13:52:21,554 DEBUG   SenderThread:3643006 [sender.py:send():379] send: telemetry
+2024-07-17 13:52:21,876 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:52:22,304 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_created():271] file/dir created: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log
+2024-07-17 13:52:22,348 INFO    wandb-upload_0:3643006 [upload_job.py:push():130] Uploaded file /tmp/tmp4mj45mcgwandb/amnztaon-wandb-metadata.json
+2024-07-17 13:52:22,874 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:52:23,874 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:52:24,305 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log
+2024-07-17 13:52:24,556 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:52:24,875 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:52:25,874 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:52:26,874 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:52:27,875 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:52:29,873 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:52:34,874 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:52:39,875 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:52:44,879 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:52:45,317 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/config.yaml
+2024-07-17 13:52:50,185 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:52:55,186 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:53:00,186 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:53:05,187 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:53:10,187 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:53:15,188 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:53:17,586 DEBUG   SystemMonitor:3643006 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-17 13:53:17,588 DEBUG   SenderThread:3643006 [sender.py:send():379] send: stats
+2024-07-17 13:53:20,590 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:53:25,591 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:53:30,595 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:53:35,596 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:53:40,596 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:53:45,597 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:53:47,590 DEBUG   SenderThread:3643006 [sender.py:send():379] send: stats
+2024-07-17 13:53:51,592 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:53:56,593 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:54:01,594 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:54:06,594 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:54:11,595 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:54:16,595 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:54:17,592 DEBUG   SenderThread:3643006 [sender.py:send():379] send: stats
+2024-07-17 13:54:22,594 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:54:27,594 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:54:32,595 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:54:37,595 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:54:42,596 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:54:47,594 DEBUG   SenderThread:3643006 [sender.py:send():379] send: stats
+2024-07-17 13:54:48,595 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:54:53,597 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:54:58,598 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:55:00,224 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:00,225 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-17 13:55:00,226 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: stop_status
+2024-07-17 13:55:00,228 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:01,226 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:02,226 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:02,398 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log
+2024-07-17 13:55:03,226 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:03,608 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:55:04,226 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:04,398 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log
+2024-07-17 13:55:05,226 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:06,226 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:06,399 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log
+2024-07-17 13:55:07,226 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:08,226 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:08,400 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log
+2024-07-17 13:55:08,720 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:55:09,226 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:10,068 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-17 13:55:10,068 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: stop_status
+2024-07-17 13:55:10,226 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:10,401 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log
+2024-07-17 13:55:11,235 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:12,234 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:12,401 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log
+2024-07-17 13:55:13,234 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:13,811 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:55:14,235 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:14,402 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log
+2024-07-17 13:55:15,234 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:16,235 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:16,406 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log
+2024-07-17 13:55:17,235 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:17,600 DEBUG   SenderThread:3643006 [sender.py:send():379] send: stats
+2024-07-17 13:55:18,235 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:18,406 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log
+2024-07-17 13:55:19,056 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:55:19,235 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:20,235 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:20,407 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log
+2024-07-17 13:55:21,235 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:22,235 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:22,408 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log
+2024-07-17 13:55:23,235 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:24,235 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:24,322 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:55:24,409 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log
+2024-07-17 13:55:25,068 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-17 13:55:25,068 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: stop_status
+2024-07-17 13:55:25,260 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:26,247 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:26,414 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log
+2024-07-17 13:55:27,247 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:28,248 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:28,414 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log
+2024-07-17 13:55:29,605 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:55:30,415 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log
+2024-07-17 13:55:34,606 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:55:39,606 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:55:41,488 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:41,488 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-17 13:55:41,489 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: stop_status
+2024-07-17 13:55:42,045 DEBUG   SenderThread:3643006 [sender.py:send():379] send: exit
+2024-07-17 13:55:42,045 INFO    SenderThread:3643006 [sender.py:send_exit():586] handling exit code: 1
+2024-07-17 13:55:42,046 INFO    SenderThread:3643006 [sender.py:send_exit():588] handling runtime: 204
+2024-07-17 13:55:42,046 INFO    SenderThread:3643006 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 13:55:42,047 INFO    SenderThread:3643006 [sender.py:send_exit():594] send defer
+2024-07-17 13:55:42,047 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 13:55:42,047 INFO    HandlerThread:3643006 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-17 13:55:42,047 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: defer
+2024-07-17 13:55:42,047 INFO    SenderThread:3643006 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-17 13:55:42,047 INFO    SenderThread:3643006 [sender.py:transition_state():614] send defer: 1
+2024-07-17 13:55:42,047 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 13:55:42,047 INFO    HandlerThread:3643006 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-17 13:55:42,047 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: defer
+2024-07-17 13:55:42,047 INFO    SenderThread:3643006 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-17 13:55:42,047 INFO    SenderThread:3643006 [sender.py:transition_state():614] send defer: 2
+2024-07-17 13:55:42,047 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 13:55:42,048 INFO    HandlerThread:3643006 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-17 13:55:42,048 INFO    HandlerThread:3643006 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-17 13:55:42,048 DEBUG   SystemMonitor:3643006 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-17 13:55:42,048 INFO    HandlerThread:3643006 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-17 13:55:42,048 DEBUG   SystemMonitor:3643006 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-17 13:55:42,049 INFO    HandlerThread:3643006 [interfaces.py:finish():200] Joined disk monitor
+2024-07-17 13:55:42,420 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_created():271] file/dir created: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/wandb-summary.json
+2024-07-17 13:55:44,040 INFO    HandlerThread:3643006 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-17 13:55:44,040 INFO    HandlerThread:3643006 [interfaces.py:finish():200] Joined memory monitor
+2024-07-17 13:55:44,040 INFO    HandlerThread:3643006 [interfaces.py:finish():200] Joined network monitor
+2024-07-17 13:55:44,040 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-17 13:55:44,041 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: defer
+2024-07-17 13:55:44,041 INFO    SenderThread:3643006 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-17 13:55:44,041 INFO    SenderThread:3643006 [sender.py:transition_state():614] send defer: 3
+2024-07-17 13:55:44,041 DEBUG   SenderThread:3643006 [sender.py:send():379] send: stats
+2024-07-17 13:55:44,041 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 13:55:44,042 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: poll_exit
+2024-07-17 13:55:44,042 INFO    HandlerThread:3643006 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-17 13:55:44,043 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: defer
+2024-07-17 13:55:44,043 INFO    SenderThread:3643006 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-17 13:55:44,043 INFO    SenderThread:3643006 [sender.py:transition_state():614] send defer: 4
+2024-07-17 13:55:44,043 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 13:55:44,043 INFO    HandlerThread:3643006 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-17 13:55:44,043 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: defer
+2024-07-17 13:55:44,043 INFO    SenderThread:3643006 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-17 13:55:44,043 INFO    SenderThread:3643006 [sender.py:transition_state():614] send defer: 5
+2024-07-17 13:55:44,043 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 13:55:44,043 INFO    HandlerThread:3643006 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-17 13:55:44,043 DEBUG   SenderThread:3643006 [sender.py:send():379] send: summary
+2024-07-17 13:55:44,044 INFO    SenderThread:3643006 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 13:55:44,044 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: defer
+2024-07-17 13:55:44,044 INFO    SenderThread:3643006 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-17 13:55:44,044 INFO    SenderThread:3643006 [sender.py:transition_state():614] send defer: 6
+2024-07-17 13:55:44,044 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 13:55:44,044 INFO    HandlerThread:3643006 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-17 13:55:44,044 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: defer
+2024-07-17 13:55:44,044 INFO    SenderThread:3643006 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-17 13:55:44,045 INFO    SenderThread:3643006 [sender.py:transition_state():614] send defer: 7
+2024-07-17 13:55:44,045 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 13:55:44,045 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 13:55:44,045 INFO    HandlerThread:3643006 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-17 13:55:44,045 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: defer
+2024-07-17 13:55:44,045 INFO    SenderThread:3643006 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-17 13:55:44,046 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-17 13:55:44,421 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log
+2024-07-17 13:55:44,422 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/wandb-summary.json
+2024-07-17 13:55:45,789 INFO    SenderThread:3643006 [sender.py:transition_state():614] send defer: 8
+2024-07-17 13:55:45,790 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: poll_exit
+2024-07-17 13:55:45,790 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 13:55:45,790 INFO    HandlerThread:3643006 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-17 13:55:45,790 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: defer
+2024-07-17 13:55:45,790 INFO    SenderThread:3643006 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-17 13:55:45,790 INFO    SenderThread:3643006 [job_builder.py:build():440] Attempting to build job artifact
+2024-07-17 13:55:45,792 INFO    SenderThread:3643006 [job_builder.py:_get_source_type():580] no source found
+2024-07-17 13:55:45,792 INFO    SenderThread:3643006 [sender.py:transition_state():614] send defer: 9
+2024-07-17 13:55:45,792 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 13:55:45,792 INFO    HandlerThread:3643006 [handler.py:handle_request_defer():184] handle defer: 9
+2024-07-17 13:55:45,792 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: defer
+2024-07-17 13:55:45,792 INFO    SenderThread:3643006 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-17 13:55:45,792 INFO    SenderThread:3643006 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-17 13:55:46,048 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-17 13:55:46,422 INFO    Thread-12 :3643006 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log
+2024-07-17 13:55:46,423 INFO    SenderThread:3643006 [dir_watcher.py:finish():388] scan: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files
+2024-07-17 13:55:46,423 INFO    SenderThread:3643006 [dir_watcher.py:finish():402] scan save: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/conda-environment.yaml conda-environment.yaml
+2024-07-17 13:55:46,423 INFO    SenderThread:3643006 [dir_watcher.py:finish():402] scan save: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/wandb-metadata.json wandb-metadata.json
+2024-07-17 13:55:46,423 INFO    SenderThread:3643006 [dir_watcher.py:finish():402] scan save: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/config.yaml config.yaml
+2024-07-17 13:55:46,426 INFO    SenderThread:3643006 [dir_watcher.py:finish():402] scan save: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/requirements.txt requirements.txt
+2024-07-17 13:55:46,428 INFO    SenderThread:3643006 [dir_watcher.py:finish():402] scan save: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/wandb-summary.json wandb-summary.json
+2024-07-17 13:55:46,428 INFO    SenderThread:3643006 [dir_watcher.py:finish():402] scan save: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log output.log
+2024-07-17 13:55:46,430 INFO    SenderThread:3643006 [sender.py:transition_state():614] send defer: 10
+2024-07-17 13:55:46,430 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: poll_exit
+2024-07-17 13:55:46,431 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 13:55:46,433 INFO    HandlerThread:3643006 [handler.py:handle_request_defer():184] handle defer: 10
+2024-07-17 13:55:46,433 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: defer
+2024-07-17 13:55:46,433 INFO    SenderThread:3643006 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-17 13:55:46,433 INFO    SenderThread:3643006 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-17 13:55:47,045 INFO    wandb-upload_1:3643006 [upload_job.py:push():130] Uploaded file /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/config.yaml
+2024-07-17 13:55:47,048 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-17 13:55:47,048 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: poll_exit
+2024-07-17 13:55:47,548 INFO    wandb-upload_4:3643006 [upload_job.py:push():130] Uploaded file /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/output.log
+2024-07-17 13:55:47,833 INFO    wandb-upload_3:3643006 [upload_job.py:push():130] Uploaded file /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/wandb-summary.json
+2024-07-17 13:55:47,840 INFO    wandb-upload_0:3643006 [upload_job.py:push():130] Uploaded file /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/conda-environment.yaml
+2024-07-17 13:55:47,866 INFO    wandb-upload_2:3643006 [upload_job.py:push():130] Uploaded file /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/files/requirements.txt
+2024-07-17 13:55:48,049 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-17 13:55:48,049 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: poll_exit
+2024-07-17 13:55:48,067 INFO    Thread-11 :3643006 [sender.py:transition_state():614] send defer: 11
+2024-07-17 13:55:48,067 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 13:55:48,067 INFO    HandlerThread:3643006 [handler.py:handle_request_defer():184] handle defer: 11
+2024-07-17 13:55:48,067 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: defer
+2024-07-17 13:55:48,067 INFO    SenderThread:3643006 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-07-17 13:55:48,067 INFO    SenderThread:3643006 [file_pusher.py:join():175] waiting for file pusher
+2024-07-17 13:55:48,067 INFO    SenderThread:3643006 [sender.py:transition_state():614] send defer: 12
+2024-07-17 13:55:48,068 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 13:55:48,068 INFO    HandlerThread:3643006 [handler.py:handle_request_defer():184] handle defer: 12
+2024-07-17 13:55:48,068 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: defer
+2024-07-17 13:55:48,068 INFO    SenderThread:3643006 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-07-17 13:55:48,068 INFO    SenderThread:3643006 [file_stream.py:finish():601] file stream finish called
+2024-07-17 13:55:48,766 INFO    SenderThread:3643006 [file_stream.py:finish():605] file stream finish is done
+2024-07-17 13:55:48,766 INFO    SenderThread:3643006 [sender.py:transition_state():614] send defer: 13
+2024-07-17 13:55:48,766 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 13:55:48,767 INFO    HandlerThread:3643006 [handler.py:handle_request_defer():184] handle defer: 13
+2024-07-17 13:55:48,767 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: defer
+2024-07-17 13:55:48,767 INFO    SenderThread:3643006 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-07-17 13:55:48,767 INFO    SenderThread:3643006 [sender.py:transition_state():614] send defer: 14
+2024-07-17 13:55:48,767 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 13:55:48,767 INFO    HandlerThread:3643006 [handler.py:handle_request_defer():184] handle defer: 14
+2024-07-17 13:55:48,767 DEBUG   SenderThread:3643006 [sender.py:send():379] send: final
+2024-07-17 13:55:48,767 DEBUG   SenderThread:3643006 [sender.py:send():379] send: footer
+2024-07-17 13:55:48,768 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: defer
+2024-07-17 13:55:48,768 INFO    SenderThread:3643006 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-07-17 13:55:48,768 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-17 13:55:48,768 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: poll_exit
+2024-07-17 13:55:48,768 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: server_info
+2024-07-17 13:55:48,769 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: server_info
+2024-07-17 13:55:48,770 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-17 13:55:48,770 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: get_summary
+2024-07-17 13:55:48,771 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: sampled_history
+2024-07-17 13:55:48,771 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 13:55:49,018 DEBUG   SenderThread:3643006 [sender.py:send_request():406] send_request: poll_exit
+2024-07-17 13:55:49,019 INFO    MainThread:3643006 [wandb_run.py:_footer_history_summary_info():3991] rendering history
+2024-07-17 13:55:49,019 INFO    MainThread:3643006 [wandb_run.py:_footer_history_summary_info():4023] rendering summary
+2024-07-17 13:55:49,019 INFO    MainThread:3643006 [wandb_run.py:_footer_sync_info():3950] logging synced files
+2024-07-17 13:55:49,019 DEBUG   HandlerThread:3643006 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-17 13:55:49,019 INFO    HandlerThread:3643006 [handler.py:finish():882] shutting down handler
+2024-07-17 13:55:49,770 INFO    WriterThread:3643006 [datastore.py:close():296] close: /cpfs/29583eqvgtdvw5cvegg/data/user/yeqin/code/wandb/run-20240717_135213-7d7052ws/run-7d7052ws.wandb
+2024-07-17 13:55:50,018 INFO    SenderThread:3643006 [sender.py:finish():1608] shutting down sender
+2024-07-17 13:55:50,019 INFO    SenderThread:3643006 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-17 13:55:50,019 INFO    SenderThread:3643006 [file_pusher.py:join():175] waiting for file pusher

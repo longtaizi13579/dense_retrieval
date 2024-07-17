@@ -1,0 +1,88 @@
+/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/torch/_utils.py:776: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Inference Embeddings: 100%|███████████████████████████████████████████████████████████████████████████| 3253/3253 [02:33<00:00, 21.17it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+Inference Embeddings: 100%|███████████████████████████████████████████████████████████████████████████████| 85/85 [00:24<00:00,  3.47it/s]
+Traceback (most recent call last):
+  File "retriever_training.py", line 189, in <module>
+    data_loader = build_train_data(data_args.file_path, model_args.model_name_or_path, tokenizer, identifiers_index, name_to_identifiers_id, all_candidates, data_args)
+  File "retriever_training.py", line 101, in build_train_data
+    hard_negatives = hard_negative_sample(scores, false_negatives, all_candidates, user_querys, ground_truth)
+TypeError: hard_negative_sample() takes 3 positional arguments but 5 were given

@@ -1,0 +1,43 @@
+/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/torch/_utils.py:776: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+Inference Embeddings: 100%|███████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:00<00:00,  4.12it/s]
+
+
+
+
+
+
+
+
+
+
+
+Inference Embeddings: 100%|█████████████████████████████████████████████████████████████████████████████████████████████| 85/85 [00:24<00:00,  3.50it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 736.46it/s]
+Map:   0%|                                                                                                              | 0/1000 [00:00<?, ? examples/s]
+Traceback (most recent call last):
+  File "retriever_training.py", line 189, in <module>
+    data_loader = build_train_data(data_args.file_path, model_args.model_name_or_path, tokenizer, identifiers_index, name_to_identifiers_id, all_candidates, data_args)
+  File "retriever_training.py", line 137, in build_train_data
+    encode_ds = dataset.map(tokenize, batched=True, batch_size=training_args.train_batch_size)
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 602, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 567, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 3161, in map
+    for rank, done, content in Dataset._map_single(**dataset_kwargs):
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 3552, in _map_single
+    batch = apply_function_on_filtered_inputs(
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 3421, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+  File "retriever_training.py", line 117, in tokenize
+    hard_negatives_ids = tokenizer(
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/transformers/tokenization_utils_base.py", line 2945, in __call__
+    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/transformers/tokenization_utils_base.py", line 3032, in _call_one
+    return self.batch_encode_plus(
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/transformers/tokenization_utils_base.py", line 3228, in batch_encode_plus
+    return self._batch_encode_plus(
+  File "/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/transformers/tokenization_utils_fast.py", line 528, in _batch_encode_plus
+    encodings = self._tokenizer.encode_batch(
+TypeError: TextEncodeInput must be Union[TextInputSequence, Tuple[InputSequence, InputSequence]]

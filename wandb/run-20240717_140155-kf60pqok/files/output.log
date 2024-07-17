@@ -1,0 +1,25 @@
+/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/torch/_utils.py:776: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+Inference Embeddings: 100%|███████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  3.47it/s]
+
+
+
+
+
+
+
+
+
+
+
+Inference Embeddings: 100%|█████████████████████████████████████████████████████████████████████████████████████████████| 85/85 [00:24<00:00,  3.46it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 715.23it/s]
+Map: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:00<00:00, 1140.54 examples/s]
+/home/yeqin/anaconda3/envs/retriever/lib/python3.8/site-packages/transformers/optimization.py:591: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+Traceback (most recent call last):
+  File "retriever_training.py", line 193, in <module>
+    retriever_train(model, data_loader, training_args, logger)
+  File "retriever_training.py", line 152, in retriever_train
+    name=training_args.lr_scheduler_type,
+AttributeError: 'TrainingArguments' object has no attribute 'lr_scheduler_type'
