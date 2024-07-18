@@ -22,18 +22,18 @@ class ModelArguments:
 
 @dataclass
 class TrainingArguments:
-    weight_decay: float = field(default=1e-5)
-    lr: float = field(default=1e-4)
+    weight_decay: float = field(default=0.01)
+    lr: float = field(default=2e-5)
     deepspeed:Optional[str] = field(
         default="./deepspeed.json",
         metadata={
             "help": "Deepspeed file path."
         }
     )
-    local_rank: Optional[int] = field(default=1)
+    local_rank: Optional[int] = field(default=0)
     train_epoch: Optional[int] = field(default=1)
     lr_scheduler_type: str = field(default="linear")
-    train_batch_size: Optional[int] = field(default=16)
-    num_warmup_steps: int = field(default=0)
-    num_epochs: int = field(default=5)
+    train_batch_size: Optional[int] = field(default=32)
+    num_warmup_steps: int = field(default=1000)
+    num_epochs: int = field(default=1)
 
