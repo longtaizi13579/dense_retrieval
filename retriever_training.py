@@ -20,6 +20,9 @@ import wandb
 import logging
 import random
 import torch.nn.functional as F
+from all_kinds_methods import Recall_Calculation
+
+
 def read_api_candidates(file_dir):
     all_candidates = []
     all_apis = []
@@ -184,7 +187,62 @@ def retriever_train(model, DataLoader, training_args, logger):
             optimizer.zero_grad()
         model.save_pretrained('./result')
 
+def retriever_evaluation(model, tokenizer, qrys, candidates, ground_truth, training_args, data_args):
+    torch.cuda.set_device(training_args.local_rank)
+    with torch.no_grad():
+        all_query_embedding = []
+        all_candidates_embedding = []
+        for i in tqdm(range(0, len(qrys), training_args.evaluation_batch_size)):
+            qry_ids = tokenizer(qrys[i: i +training_args.evaluation_batch_size],
+                                padding=True,
+                                truncation=True,
+                                return_tensors='pt',
+                                max_length=data_args.max_length
+                                )
+            qry_ids_new = {k:i.cuda() for k, i in qry_ids.items()}
+            qry_embedding = model(**qry_ids_new, return_dict=True).last_hidden_state[:, 0]
+            all_query_embedding.append(qry_embedding)
+        for i in tqdm(range(0, len(candidates), training_args.evaluation_batch_size)):
+            input_sentences = []
+            for candidate in candidates[i: i +training_args.evaluation_batch_size]:
+                sample = [f'{k}:{v}' for k, v in candidate.items()]
+                input_sentence = '\n'.join(sample)
+                input_sentences.append(input_sentence)
+            candidates_ids = tokenizer(input_sentences,
+                                padding=True,
+                                truncation=True,
+                                return_tensors='pt',
+                                max_length=data_args.max_length
+                                )
+            candidates_ids_new = {k:i.cuda() for k, i in candidates_ids.items()}
+            candidates_embedding = model(**candidates_ids_new, return_dict=True).last_hidden_state[:, 0]
+            all_candidates_embedding.append(candidates_embedding)
+        all_query_embedding = torch.cat(all_query_embedding, dim=0)
+        all_candidates_embedding = torch.cat(all_candidates_embedding, dim=0)
+    scores = all_query_embedding @ all_candidates_embedding.T
+    R_1 = 0
+    R_5 = 0
+    R_10 = 0
+    # 计算BM25得分
+    for qry_idx in tqdm(range(len(scores))):
+        score = scores[qry_idx]
+        add_r_1, add_r_5, add_r_10 = Recall_Calculation(ground_truth, qry_idx, score.cpu().numpy())
+        R_1 += add_r_1
+        R_5 += add_r_5
+        R_10 += add_r_10
+    print(R_1, R_5, R_10)
 
+def build_evaluation_data(evaluation_file_path, identifiers_index, name_to_identifiers_id):
+    test_data = torch.load(evaluation_file_path)
+    qrys = []
+    ground_truth = []
+    for sample in test_data:
+        identify = sample['label']
+        if identify in identifiers_index:
+            qrys.append(sample['query'])
+            name = identifiers_index[identify]['指标名称']
+            ground_truth.append(name_to_identifiers_id[name])
+    return qrys, ground_truth
 
 
 if __name__ == '__main__':
@@ -196,9 +254,13 @@ if __name__ == '__main__':
                         format='%(name)s - %(levelname)s - %(message)s')
     model_args, data_args, training_args = parser.parse_args_into_dataclasses()
     tokenizer = AutoTokenizer.from_pretrained(model_args.model_name_or_path)
-    model = AutoModel.from_pretrained(model_args.model_name_or_path)
+    model = AutoModel.from_pretrained('/home/yeqin/model/result')
     model.cuda()
     model.eval()
     all_candidates, all_apis, identifiers_index, name_to_identifiers_id = read_api_candidates(data_args.doc_path)
     data_loader = build_train_data(data_args.file_path, model_args.model_name_or_path, tokenizer, identifiers_index, name_to_identifiers_id, all_candidates, data_args)
     retriever_train(model, data_loader, training_args, logger)
+
+    # qrys, ground_truth =  build_evaluation_data(data_args.evaluation_file_path, identifiers_index, name_to_identifiers_id)
+    # print(len(qrys))
+    # retriever_evaluation(model, tokenizer, qrys, all_candidates, ground_truth, training_args, data_args)

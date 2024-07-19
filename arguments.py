@@ -4,12 +4,15 @@ from typing import Optional, Union
 @dataclass
 class DataTrainingArguments:
     file_path: Optional[str] = field(
-        default='/home/yeqin/data/2024-07-02_train.pt',#'/root/autodl-tmp/hotpotqa',
+        default='/home/yeqin/data/2024-07-02_train.pt',
     )
     doc_path: Optional[str] = field(
-        default='/home/yeqin/basic_docstring',#'/root/autodl-tmp/hotpotqa',
+        default='/home/yeqin/basic_docstring',
     )
     max_length: int = field(default=512)
+    evaluation_file_path: Optional[str] = field(
+        default='/home/yeqin/data/2024-07-02_test.pt',
+    )
     
 @dataclass
 class ModelArguments:
@@ -34,6 +37,7 @@ class TrainingArguments:
     train_epoch: Optional[int] = field(default=1)
     lr_scheduler_type: str = field(default="linear")
     train_batch_size: Optional[int] = field(default=32)
+    evaluation_batch_size: Optional[int] = field(default=128)
     num_warmup_steps: int = field(default=1000)
     num_epochs: int = field(default=1)
 
